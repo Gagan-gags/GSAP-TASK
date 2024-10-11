@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; 
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    overflow: hidden; 
+}
+
+.section-container {
+    height: 100vh;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 1.875rem;
+    line-height: 2.8125rem;
+    font-weight: 400;
+}
+
+#section1 {
+    color: #3b3b3b;
+}
+
+#section2 p {
+    color: #3b3b3b;
+    margin-top: -45px;
+}
+
+#section3 {
+    background-image: url("./images/lenonvo.jpg");
+    background-repeat: no-repeat;          
+    background-size: cover;               
+    background-position: center;          
+    background-color: #f0f0f0;
+    position: relative;
+    flex: 1;           
+    overflow: hidden;
+}
+
+#section4 {
+    background-image: url("./images/repair-and-restoration.jpg");
+    background-repeat: no-repeat;          
+    background-size: cover;               
+    background-position: center;          
+    background-color: #f0f0f0;
+    position: relative;
+    flex: 1;           
+    overflow: hidden;
+}
+
+#section3::before {
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0;
+    bottom: 0; 
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: -1; 
+}
+.section {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100vh; 
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    transition: background-color 1s ease;
+}
+
+.section .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    max-width: 906px;
+    margin: auto;
+}
+
+#section1 {background: linear-gradient(to bottom right, #ffffff, #f0f0f0); }
+#section2 {background: linear-gradient(to bottom right, #ffffff, #dcdcdc);}
+
+.secrion3__content {
+   position: relative;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+}
+
+.secrion3__content__text {
+    position: absolute;
+    right: 100px;
+    max-width: 400px;
+    text-align: left;
+}
+.secrion4__content {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+ }
+ 
+ .secrion4__content__text {
+     position: absolute;
+     left: 100px;
+     max-width: 400px;
+     text-align: left;
+     z-index: 2;
+ }
+
+#section3 h1, #section4 h1  {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    left: 0;
+    font-size: 6rem;
+}
+#section4 h1{
+    left: 4%;
+}
+.content-wrapper {
+    text-align: center;
+    padding: 20px;
+    max-width: 906px;
+    margin: 0 auto;
+}
+
+.thumb-image {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.image-container {
+    width: 475px;
+    height: 475px;
+    background: #D1FA94;
+    border-radius: 100%;
+    margin: 50px auto 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #3b3b3b;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.right {
+    background-color: #D1FA94;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 100px;
+    height: 100vh;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    transition: opacity 0.5s ease;
+    position: absolute;
+    right: -600px;
+    opacity: 0; 
+    visibility: hidden; 
+}
+.left {
+    flex: 1;
+    background-color: #D1FA94;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 100px;
+    height: 100vh;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    position: relative;
+}
+.left .circle{
+    bottom: -120px;
+    left: -120px;
+    top: auto;
+    width: 600px;
+    height: 600px;
+}
+
+.secrion3__content__text h2, .secrion4__content__text h2 {
+    color: #3b3b3b;
+    font-size: 3rem;
+    z-index: 2;
+}
+.secrion3__content__text p, .secrion4__content__text p {
+    color: #3b3b3b;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    z-index: 2;
+}
+
+.circle {
+    position: absolute;
+    top: -120px;
+    right: -120px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: white;
+    z-index: 1; 
+}
+.image__icon{
+    margin-top: 50px;
+}
+.image__icon img{
+    width: 200px;
+    height: 200px;
+}
