@@ -63,7 +63,7 @@ section3Timeline.from(".right", {
   duration: 2,
   ease: "power2.out"
 }, "-=1").from(".secrion3__content__text p", {
-  y: 400,
+  y: 500,
   duration: 2,
   ease: "power2.out"
 }, "-=1");
