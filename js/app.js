@@ -6,12 +6,12 @@ let isAnimating = false;
 
 const section1Timeline = gsap.timeline({ paused: true });
 section1Timeline.from(".section1__Heading", {
-  y: 50,
+  y: 70,
   opacity: 0,
   duration: 1,
   ease: "power2.out"
 }).from(".section1__Content", {
-  y: 50,
+  y: 120,
   opacity: 0,
   duration: 1,
   ease: "power2.out"
@@ -59,11 +59,13 @@ section3Timeline.from(".right", {
     rightElement.style.right = "0";
   }
 }).from(".secrion3__content__text h2", {
-  y: 720,
-  duration: 2,
+  y: 200,
+  opacity: 0,
+  duration: 1,
   ease: "power2.out"
 }, "-=1").from(".secrion3__content__text p", {
-  y: 500,
+  y: 300,
+  opacity: 0,
   duration: 2,
   ease: "power2.out"
 }, "-=1");
@@ -80,11 +82,13 @@ section4Timeline.from(".left", {
     leftElement.style.left = "0"; 
   }
 }).from(".secrion4__content__text h2", {
-  y: 720,
-  duration: 2,
+  y: 200,
+  opacity: 0,
+  duration: 1,
   ease: "power2.out"
 }, "-=1").from(".secrion4__content__text p", {
-  y: 600,
+  y: 300,
+  opacity: 0,
   duration: 2,
   ease: "power2.out"
 }, "-=1");
