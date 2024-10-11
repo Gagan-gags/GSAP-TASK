@@ -41,7 +41,7 @@ p {
 }
 
 #section3 {
-    background-image: url("./images/lenonvo.jpg");
+    background-image: url("../images/lenonvo.jpg");
     background-repeat: no-repeat;          
     background-size: cover;               
     background-position: center;          
@@ -52,7 +52,7 @@ p {
 }
 
 #section4 {
-    background-image: url("./images/repair-and-restoration.jpg");
+    background-image: url("../images/repair-and-restoration.jpg");
     background-repeat: no-repeat;          
     background-size: cover;               
     background-position: center;          
